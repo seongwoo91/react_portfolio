@@ -1,0 +1,67 @@
+* {
+  font-family: "GmarketSans";
+}
+
+#menu {
+  width: 20vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "a1"
+    "a3"
+    "a3"
+    "a4";
+  grid-template-columns: 100%;
+  grid-template-rows: 25% 25% 25% 25%;
+  overflow: hidden;
+  background: #d6d6d6;
+  gap: 1px;
+  border-right: 1px solid #d6d6d6;
+}
+#menu > div {
+  background: #fff;
+  overflow: hidden;
+}
+#menu > div:nth-child(1) {
+  grid-area: a1;
+}
+#menu > div:nth-child(2) {
+  grid-area: a2;
+}
+#menu > div:nth-child(3) {
+  grid-area: a3;
+}
+#menu > div:nth-child(4) {
+  grid-area: a4;
+}
+#menu .black {
+  background: #000;
+  color: #fff;
+}
+#menu {
+  h1 {
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+  }
+  h4 {
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 300;
+  }
+}
+
+.kor {
+  position: relative;
+}
+.kor::after {
+  content: "";
+  position: absolute;
+  background: url(../../../public/img/koreaflag.svg);
+  background-size: cover;
+  width: 2vw;
+  height: 2vw;
+  top: -1.8vw;
+}
